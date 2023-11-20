@@ -50,6 +50,8 @@ public class QuizServiceImpl implements QuizService {
 		if (quList.isEmpty()) {
 			quizVoList.add(req);
 			return new QuizRes(quizVoList, RtnCode.SUCCESSFUL);
+		}else {			
+			quizVoList.add(req);
 		}
 		for (Question qu : quList) {
 			qu.setqnId(qnid);
@@ -272,5 +274,7 @@ public class QuizServiceImpl implements QuizService {
 
 		return new QuestionRes(quList,RtnCode.SUCCESSFUL);
 	}
+
+	
 
 }

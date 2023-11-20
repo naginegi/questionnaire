@@ -1,6 +1,7 @@
 package com.example.questionnaire.Service.ifs;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 
 import com.example.questionnaire.vo.QuestionRes;
@@ -27,5 +28,7 @@ public interface QuizService {
 	public QuestionnaireRes searchQuestionnaireList(String title, LocalDate startDate,LocalDate endDate,boolean isPublished);
 
 	public QuestionRes searchQuestionList(int qnId);
+
+	
 	
 }
