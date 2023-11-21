@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class QuizSearchReq {
 
+	
 	private String title;
 	
 	@JsonProperty("start_date")
